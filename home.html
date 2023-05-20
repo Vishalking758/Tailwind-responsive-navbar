@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="md:grid md:grid-cols-2 z-40 shadow-lg p-2">
+        <div class="md:col-span-1 flex justify-between px-4 md:px-7"><p class=" font-bold text-lg">Hello</p>
+        <button id="togglebtn" class="md:hidden hover:text-blue-600 font-bold z-50 ease-in-out duration-500"
+        onclick="toggleNavbar()">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path id="togglePath" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        </button>
+        </div>
+        <div id="nav-items"
+        class="fixed md:static flex flex-col md:flex-row justify-evenly items-center w-screen h-screen md:w-full md:h-full md:duration-0 md:bg-transparent md:text-black top-0 left-full text-white bg-gray-800 ease-in-out duration-500">
+        <a class="uppercase font-semibold">home</a>
+        <a class="uppercase font-semibold">about</a>
+        <a class="uppercase font-semibold">project</a>
+        <a class="uppercase font-semibold">contact</a>
+        </div>
+        <script>
+        function toggleNavbar() {
+        const navbar = document.getElementById("nav-items");
+        const path = document.getElementById("togglePath");
+        const attributeValue = path.getAttribute("d");
+        const togglebtn = document.getElementById("togglebtn");
+        navbar.classList.toggle("left-0");
+        togglebtn.classList.toggle("text-white");
+        if (attributeValue === "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5") {
+        path.setAttribute("d", "M6 18L18 6M6 6l12 12");
+        } else {
+        path.setAttribute("d", "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5");
+        }
+        }
+        </script>
+        </nav>
+</body>
+</html>
