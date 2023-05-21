@@ -57,16 +57,16 @@
 
 
 <section class="md:p-10 pt-10 md:pt-0 ">
-    <ol class="list-decimal p-5 md:p-10">
+    <ol class="p-5 md:p-10">
         <li class="font-bold text-xl ">
           Introduction:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">A responsive navbar is a crucial component of modern web design. It allows users to easily navigate through the website on different devices and screen sizes. With Tailwind CSS, you can create a responsive navbar efficiently using its utility classes and pre-built components.</li>
           </ul>
         </li>
         <li class="font-bold text-xl pt-7">
           Benefits of a Responsive Navbar:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">Improved User Experience: A responsive navbar ensures that users can access the navigation menu effortlessly, regardless of the device they are using.</li>
             <li class="md:ml-6 mt-2 font-normal text-base">Mobile Compatibility: With the increasing number of mobile users, a responsive navbar guarantees optimal display and functionality on smaller screens.</li>
             <li class="md:ml-6 mt-2 font-normal text-base">Consistent Design: By adapting to various screen sizes, a responsive navbar maintains a consistent design aesthetic throughout the website.</li>
@@ -74,13 +74,13 @@
         </li>
         <li class="font-bold text-xl pt-7">
           Tailwind CSS:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">Tailwind CSS is a popular utility-first CSS framework that provides a wide range of classes for quickly styling and customizing your website. It offers responsive design utilities out of the box, making it ideal for creating a responsive navbar.</li>
           </ul>
         </li>
         <li class="font-bold text-xl pt-7">
           Implementation:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">Start by setting up a basic HTML structure for your navbar.</li>
             <li class="md:ml-6 mt-2 font-normal text-base">Apply Tailwind CSS classes to the HTML elements to style and position the navbar components.</li>
             <li class="md:ml-6 mt-2 font-normal text-base">Utilize Tailwind's responsive classes to define different behaviors for various screen sizes.</li>
@@ -89,13 +89,13 @@
         </li>
         <li class="font-bold text-xl pt-7">
           Examples and Inspiration:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">Explore the Tailwind CSS documentation and community resources to find examples and inspiration for creating a responsive navbar. You can find code snippets, tutorials, and live demos that demonstrate different navbar designs and techniques.</li>
           </ul>
         </li>
         <li class="font-bold text-xl pt-7">
           Tips and Best Practices:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">Keep the navbar clean and minimal, focusing on essential navigation items.</li>
             <li class="md:ml-6 mt-2 font-normal text-base">Prioritize the most important menu items for mobile devices to optimize limited screen space.</li>
             <li class="md:ml-6 mt-2 font-normal text-base">Use responsive design principles to create breakpoints and adapt the navbar layout for different screen sizes.</li>
@@ -104,7 +104,7 @@
         </li>
         <li class="font-bold text-xl pt-7">
           Script Tag:
-          <ul class="list-disc">
+          <ul class="">
             <li class="md:ml-6 mt-2 font-normal text-base">If you are using an HTML document, include the following script tag in the header section to import Tailwind CSS from the CDN:</li>
             <li class="md:ml-6 mt-2 font-normal text-base bg-black text-white text-lg font-bold md:w-max px-2 rounded-xl"><code>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</code></li>
             <li class="md:ml-6 mt-2 font-normal text-base">By including this script tag, you can access the Tailwind CSS utility classes and components in your HTML code.</li>
@@ -162,9 +162,9 @@
         function updateSection() {
           var section = document.querySelector('.section');
           section.innerHTML = `
-<h2 class="col-span-1 device flex justify-center">Tailwind Navbar</h2><div class="col-span-1 flex justify-center">
+<h2 class="col-span-1 device flex justify-center">Tailwind Navbar</h2><div class="col-span-1 flex justify-center items-end">
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 animate-bounce border-black border-2 rounded-full"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
-</svg></div><p class="col-span-1 flex justify-center">"This Navbar is responsive."</p>
+</svg></div><p class="col-span-1 flex justify-center ">"This Navbar is responsive."</p>
           `;} document.addEventListener('DOMContentLoaded', updateSection);
       </script>
 </body>
